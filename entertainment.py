@@ -2,8 +2,7 @@
 import fresh_tomatoes
 import media
 
-# pep8: disable=E223
-
+# An object for Avatar movie
 avatar = media.Movie(
     'Avatar',
     """A man strives to become one the alien species,
@@ -12,6 +11,7 @@ avatar = media.Movie(
     'https://www.youtube.com/watch?v=5PSNL1qE6VY'
 )
 
+# An object for Avengers movie
 avengers = media.Movie(
     'Avengers: Infinity Wars',
     'Avenger\'s now face the mighty thanos',
@@ -19,6 +19,7 @@ avengers = media.Movie(
     'https://www.youtube.com/watch?v=QwievZ1Tx-8'
 )
 
+# An object for Avaitor movie
 avaitor = media.Movie(
     'The Aviator',
     """Based on the 1993 non-fiction book Howard Hughes:
@@ -27,6 +28,7 @@ avaitor = media.Movie(
     'https://www.youtube.com/watch?v=FebPJlmgldE'
 )
 
+# An object for Incredebels movie
 incredebels = media.Movie(
     'Incredibles 2',
     'Hero are illegal, and when Incredebels fight back to change the opnion.',
@@ -34,6 +36,7 @@ incredebels = media.Movie(
     'https://www.youtube.com/watch?v=i5qOzqD9Rms'
 )
 
+# An object for Shutter Island movie
 shutter_island = media.Movie(
     'Shutter Island',
     'Two us marshals go to investigate a missing patient from an aslyum',
@@ -41,6 +44,7 @@ shutter_island = media.Movie(
     'https://www.youtube.com/watch?v=5iaYLCiq5RM'
 )
 
+# An object for The Great Gatsby movie
 great_gatsby = media.Movie(
     'The Great Gatsby',
     'A war vetran becomes friends with millionair Gatsby',
@@ -48,6 +52,7 @@ great_gatsby = media.Movie(
     'https://www.youtube.com/watch?v=rARN6agiW7o'
 )
 
-
+# Creating a list with all the movie objects.
 movies = [avatar, avengers, avaitor, incredebels, shutter_island, great_gatsby]
+# Let's now call open movies page that spits a html page with the movies list.
 fresh_tomatoes.open_movies_page(movies)
